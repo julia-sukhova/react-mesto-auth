@@ -55,7 +55,7 @@ function App() {
       }).catch(err => {
         console.log(`Ошибка проверки токена: ${err}`);
       });
-  });
+  }, []);
 
   useEffect(() => {
     if (!loggedinEmail) {
